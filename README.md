@@ -93,18 +93,16 @@ Challenge_1b/
 
 ```bash
 # 1. Build the Docker image
-docker build --platform linux/amd64 -t mysolution:round1a .
+docker build --platform linux/amd64 -t
+mysolutionname:somerandomidentifier .
 
 # 2. Place your test PDFs in the input/ directory
 mkdir -p input output
 cp yourfile.pdf input/
 
 # 3. Run the container
-docker run --rm \
-  -v "${PWD}/input:/app/input" \
-  -v "${PWD}/output:/app/output" \
-  --network none \
-  mysolution:round1a
+docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --
+network none mysolutionname:somerandomidentifier`
 ```
 
 > ✅ JSON output will appear in the `output/` folder.
