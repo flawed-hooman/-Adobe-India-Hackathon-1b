@@ -1,0 +1,5 @@
+PyMuPDF==1.22.3
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.1
+numpy>=1.19.5
+tqdm
