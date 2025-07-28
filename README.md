@@ -82,7 +82,7 @@ Challenge_1b/
 }
 ```
 
-## Prerequisites for running the solution
+## Prerequisites 
 
 - [Docker](https://www.docker.com/get-started) installed on your machine (recommended for consistent environments)
 - Python 3.8+ environment (if running locally)
