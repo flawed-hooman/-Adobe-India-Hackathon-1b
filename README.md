@@ -95,19 +95,32 @@ Challenge_1b/
 }
 ```
 
-## Steps to Build and Run the Solution
-
-### Prerequisites
+## Prerequisites for running the solution
 
 - [Docker](https://www.docker.com/get-started) installed on your machine (recommended for consistent environments)
 - Python 3.8+ environment (if running locally)
 
 ---
 
-### Building the Docker Image
+## 🚀 Quick Start: Build & Run
 
-From your project root directory (where your `Dockerfile` resides), run the following command to build the Docker image:
+```bash
+# 1. Build the Docker image
+docker build --platform linux/amd64 -t mysolution:round1a .
 
-docker build --platform linux/amd64 -t mysolutionname:latest 
+# 2. Place your test PDFs in the input/ directory
+mkdir -p input output
+cp yourfile.pdf input/
+
+# 3. Run the container
+docker run --rm \
+  -v "${PWD}/input:/app/input" \
+  -v "${PWD}/output:/app/output" \
+  --network none \
+  mysolution:round1a
+```
+
+> ✅ JSON output will appear in the `output/` folder.
+
 
 ---
