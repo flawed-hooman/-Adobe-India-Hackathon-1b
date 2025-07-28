@@ -1,7 +1,24 @@
 # Challenge 1b: Multi-Collection PDF Analysis
 
 ## Overview
-Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases.
+This project implements a pipeline to extract structured content from PDF documents, build hierarchical representations of the documents, and generate semantically ranked sections relevant to a user's task such as travel planning.
+
+The system processes multiple document collections, each containing a set of PDF guides and a user-provided configuration JSON (with user role/persona and query). The output is a JSON report capturing key document sections and detailed content subsections, ranked according to relevance to the user query.
+
+## Approach
+
+### 1) PDF Parsing and Structural Extraction:
+PDFs are parsed page-by-page using PyMuPDF (fitz). Text spans are extracted and clustered into lines, then grouped into blocks based on spatial layout and font styling. Blocks are scored heuristically considering font size, bold/italic flags, and layout proximity. Using heuristics and semantic checks, blocks are classified as headers (with levels H1/H2/H3) or as paragraphs. The document content is represented as a tree of nodes, capturing document hierarchy.
+
+### 2) Semantic Embedding and Ranking:
+Extracted headers from all documents are embedded using a transformer model (sentence-transformers, specifically all-MiniLM-L6-v2). A FAISS vector index is built over these embeddings for efficient similarity search. Given the user persona and specific query (job to be done), an embedding is generated and queried against the corpus. Top-ranked document sections are selected based on similarity scores.
+
+### 3) Detailed Subsection Analysis:
+Candidate paragraphs and multi-paragraph subsections are extracted under headers. These are filtered by relevance to keywords in the user query. Subsections are embedded and reranked to select key content chunks. Relevant subsections are trimmed and prepared for final output.
+
+### 4) Outputs:
+Per-collection JSON reports summarize the important sections and relevant sub-contents. (Optional) JSON files represent the detailed document tree structures for each PDF.
+
 
 ## Project Structure
 ```
@@ -26,6 +43,13 @@ Challenge_1b/
 ├── requirements.txt       
 └── README.md
 ```
+
+## Models and Libraries Used
+- **PyMuPDF (fitz)** : For fast PDF parsing, layout analysis, and text extraction.
+- **sentence-transformers (all-MiniLM-L6-v2 model)**: To generate sentence embeddings for semantic similarity and ranking.
+- **FAISS**: For approximate nearest neighbor vector search to efficiently retrieve relevant document sections (**faiss-cpu** for CPU-only environments).
+- **Python standard libraries**: json, os, re, datetime, etc.
+- **Additional libraries**: numpy, tqdm 
 
 ## Collections
 
