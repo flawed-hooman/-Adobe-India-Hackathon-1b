@@ -9,19 +9,21 @@ Challenge_1b/
 ├── input/       
 │    ├── Collection 1/                    # Travel Planning
 │    │   ├── PDFs/                       # South of France guides
-│    │   ├── challenge1b_input.json      # Input configuration
-│    │   └── challenge1b_output.json     # Analysis results
+│    │   └── challenge1b_input.json      # Input configuration
 │    ├── Collection 2/                    # Adobe Acrobat Learning
 │    │   ├── PDFs/                       # Acrobat tutorials
-│    │   ├── challenge1b_input.json      # Input configuration
-│    │   └── challenge1b_output.json     # Analysis results
+│    │   └── challenge1b_input.json      # Input configuration
 │    └── Collection 3/                    # Recipe Collection
 │        ├── PDFs/                       # Cooking guides
-│        ├── challenge1b_input.json      # Input configuration
-│        └── challenge1b_output.json     # Analysis results
-├── output/       
-├──        
-├── input/       
+│        └── challenge1b_input.json      # Input configuration
+├── output/
+│    ├── output_Collection 1     # Analysis results
+│    ├── output_Collection 2     # Analysis results
+│    └── output_Collection 3     # Analysis results
+├── .dockerignore
+├── Dockerfile
+├── main.py
+├── requirements.txt       
 └── README.md
 ```
 
@@ -93,5 +95,3 @@ Challenge_1b/
 - Structured JSON output with metadata
 
 ---
-
-**Note**: This README provides a brief overview of the Challenge 1b solution structure based on available sample data. 
