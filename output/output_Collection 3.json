@@ -1,0 +1,81 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Breakfast Ideas.pdf",
+            "Dinner Ideas - Mains_1.pdf",
+            "Dinner Ideas - Mains_2.pdf",
+            "Dinner Ideas - Mains_3.pdf",
+            "Dinner Ideas - Sides_1.pdf",
+            "Dinner Ideas - Sides_2.pdf",
+            "Dinner Ideas - Sides_3.pdf",
+            "Dinner Ideas - Sides_4.pdf",
+            "Lunch Ideas.pdf"
+        ],
+        "persona": {
+            "role": "Food Contractor"
+        },
+        "job_to_be_done": {
+            "task": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
+        },
+        "processing_timestamp": "2025-07-28T22:19:30.224"
+    },
+    "extracted_sections": [
+        {
+            "document": "Dinner Ideas - Mains_1.pdf",
+            "section_title": " Shredded lettuce, diced tomatoes, shredded cheese, sour cream, and salsa for toppings",
+            "importance_rank": 1,
+            "page_number": 5
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "section_title": "Breakfast Tacos Ingredients:",
+            "importance_rank": 2,
+            "page_number": 6
+        },
+        {
+            "document": "Dinner Ideas - Mains_1.pdf",
+            "section_title": "Fish Tacos Ingredients:",
+            "importance_rank": 3,
+            "page_number": 10
+        },
+        {
+            "document": "Dinner Ideas - Mains_1.pdf",
+            "section_title": " Sliced green onions for garnish",
+            "importance_rank": 4,
+            "page_number": 4
+        },
+        {
+            "document": "Lunch Ideas.pdf",
+            "section_title": "Veggie and Cheese Quesadilla Ingredients:",
+            "importance_rank": 5,
+            "page_number": 13
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "refined_text": " Instructions:\no Arrange meats, cheeses, olives, and vegetables on a platter. o Serve with breadsticks.",
+            "page_number": 3
+        },
+        {
+            "document": "Dinner Ideas - Sides_4.pdf",
+            "refined_text": " Instructions:\no Dice tomatoes and cucumber, slice red onion. o Blanch green beans until tender. o Arrange tomatoes, cucumber, onion, green beans, olives, and tuna on a plate. o Quarter hard-boiled eggs and add to the salad. o Whisk olive oil, vinegar, mustard, and salt, then drizzle over the salad. o Toss gently and serve.",
+            "page_number": 11
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "refined_text": "Instructions:\n• In a bowl, combine cottage cheese, cucumber, cherry tomatoes, and bell pepper. • Season with salt and pepper. • Serve immediately.",
+            "page_number": 16
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "refined_text": " Instructions:\no Prepare each side dish separately. o Arrange on small plates. o Serve as accompaniments to the main meal.",
+            "page_number": 5
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "refined_text": "Breakfast Tacos Ingredients:\n• 2 large eggs • 1/4 cup shredded cheese • 1/4 cup cooked sausage or bacon • 1/4 cup diced bell pepper • 1/4 cup diced onions • 2 small flour tortillas • Salsa for serving",
+            "page_number": 6
+        }
+    ]
+}
