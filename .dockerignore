@@ -6,6 +6,5 @@ __pycache__/
 venv/
 .git/
 input/
-output/
 *.pdf
 *.json
