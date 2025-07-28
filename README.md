@@ -6,18 +6,22 @@ Advanced PDF analysis solution that processes multiple document collections and 
 ## Project Structure
 ```
 Challenge_1b/
-├── Collection 1/                    # Travel Planning
-│   ├── PDFs/                       # South of France guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 2/                    # Adobe Acrobat Learning
-│   ├── PDFs/                       # Acrobat tutorials
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 3/                    # Recipe Collection
-│   ├── PDFs/                       # Cooking guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
+├── input/       
+│    ├── Collection 1/                    # Travel Planning
+│    │   ├── PDFs/                       # South of France guides
+│    │   ├── challenge1b_input.json      # Input configuration
+│    │   └── challenge1b_output.json     # Analysis results
+│    ├── Collection 2/                    # Adobe Acrobat Learning
+│    │   ├── PDFs/                       # Acrobat tutorials
+│    │   ├── challenge1b_input.json      # Input configuration
+│    │   └── challenge1b_output.json     # Analysis results
+│    └── Collection 3/                    # Recipe Collection
+│        ├── PDFs/                       # Cooking guides
+│        ├── challenge1b_input.json      # Input configuration
+│        └── challenge1b_output.json     # Analysis results
+├── output/       
+├──        
+├── input/       
 └── README.md
 ```
 
