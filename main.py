@@ -341,7 +341,7 @@ def smart_truncate(text, max_chars):
 # --- Main Execution Logic ---
 def main():
     base_input_dir = "/app/input"
-    base_output_dir = "app/output"
+    base_output_dir = "/app/output"
     os.makedirs(base_output_dir, exist_ok=True)
     collections = [d for d in os.listdir(base_input_dir) if os.path.isdir(os.path.join(base_input_dir, d))]
     
