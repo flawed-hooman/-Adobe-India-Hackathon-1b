@@ -56,19 +56,6 @@ Challenge_1b/
 
 ## Input/Output Format
 
-### Input JSON Structure
-```json
-{
-  "challenge_info": {
-    "challenge_id": "round_1b_XXX",
-    "test_case_name": "specific_test_case"
-  },
-  "documents": [{"filename": "doc.pdf", "title": "Title"}],
-  "persona": {"role": "User Persona"},
-  "job_to_be_done": {"task": "Use case description"}
-}
-```
-
 ### Output JSON Structure
 ```json
 {
