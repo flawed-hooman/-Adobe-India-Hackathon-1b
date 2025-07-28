@@ -44,32 +44,15 @@ Challenge_1b/
 └── README.md
 ```
 
+
 ## Models and Libraries Used
 - **PyMuPDF (fitz)** : For fast PDF parsing, layout analysis, and text extraction.
 - **sentence-transformers (all-MiniLM-L6-v2 model)**: To generate sentence embeddings for semantic similarity and ranking.
 - **FAISS**: For approximate nearest neighbor vector search to efficiently retrieve relevant document sections (**faiss-cpu** for CPU-only environments).
 - **Python standard libraries**: json, os, re, datetime, etc.
-- **Additional libraries**: numpy, tqdm 
+- **Additional libraries**: numpy, tqdm
 
-## Collections
 
-### Collection 1: Travel Planning
-- **Challenge ID**: round_1b_002
-- **Persona**: Travel Planner
-- **Task**: Plan a 4-day trip for 10 college friends to South of France
-- **Documents**: 7 travel guides
-
-### Collection 2: Adobe Acrobat Learning
-- **Challenge ID**: round_1b_003
-- **Persona**: HR Professional
-- **Task**: Create and manage fillable forms for onboarding and compliance
-- **Documents**: 15 Acrobat guides
-
-### Collection 3: Recipe Collection
-- **Challenge ID**: round_1b_001
-- **Persona**: Food Contractor
-- **Task**: Prepare vegetarian buffet-style dinner menu for corporate gathering
-- **Documents**: 9 cooking guides
 
 ## Input/Output Format
 
@@ -112,10 +95,19 @@ Challenge_1b/
 }
 ```
 
-## Key Features
-- Persona-based content analysis
-- Importance ranking of extracted sections
-- Multi-collection document processing
-- Structured JSON output with metadata
+## Steps to Build and Run the Solution
+
+### Prerequisites
+
+- [Docker](https://www.docker.com/get-started) installed on your machine (recommended for consistent environments)
+- Python 3.8+ environment (if running locally)
+
+---
+
+### Building the Docker Image
+
+From your project root directory (where your `Dockerfile` resides), run the following command to build the Docker image:
+
+docker build --platform linux/amd64 -t mysolutionname:latest 
 
 ---
